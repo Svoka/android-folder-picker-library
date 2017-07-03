@@ -1,9 +1,7 @@
 # android-folder-picker-library
-[![Demo](https://img.shields.io/badge/Demo%20APK-2.2-blue.svg)](https://github.com/kashifo/android-folder-picker-library/releases/download/v2.2/FolderPickerDemo_v2.2.apk)
-[![Bintray](https://img.shields.io/badge/Bintray-2.2-blue.svg)](https://bintray.com/kashifo/android-folder-picker-library/android-folder-picker-library/_latestVersion)
-[![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-android--folder--picker--library-blue.svg?style=flat)](https://android-arsenal.com/details/1/5837)
 
-A light-weight android library that can be quickly integrated into any app to let users choose folder, also files (but esp built for folders).
+Русский язык по умолчанию.
+
 
 # Example Uses
 - To let users choose folder for saving files
@@ -15,17 +13,29 @@ etc...
 
 |![Preview](https://github.com/kashifo/android-folder-picker-library/raw/master/screenshots/folderpicker-scr1.png) | ![Preview](https://github.com/kashifo/android-folder-picker-library/raw/master/screenshots/folderpicker-scr2.png) | ![Preview](https://github.com/kashifo/android-folder-picker-library/raw/master/screenshots/folderpicker-scr3.png) |
 |:-------------------:|:------------------------:|:-----------------:|
-| Can pick folders | Can create folder | Can also pick file |
+| Выбор папки | Создание папки | Выбор файла |
 
 
-# Installation
+# Подключение
 
-For your convenience, it is available on jCenter, So just add this in your app dependencies:
-```gradle
-    compile 'lib.kashif:folderpicker:2.2'
+```
+//Add it in your root build.gradle at the end of repositories:
+allprojects {
+		repositories {
+			...
+			maven { url 'https://jitpack.io' }
+		}
+	}
+```
+
+
+```
+dependencies {
+	        compile 'com.github.Svoka:android-folder-picker-library:-SNAPSHOT'
+	}
 ```
   
-# Usage
+# Использование
 
 **To pick folder**
 
@@ -52,7 +62,7 @@ If the user selects folder/file, the name of folder/file will be returned to you
 
 **Options**
 
-Cusstomization options can be passed as extras to FolderPicker activity.
+Customization options can be passed as extras to FolderPicker activity.
 
  ```java
  
@@ -67,8 +77,6 @@ Cusstomization options can be passed as extras to FolderPicker activity.
         
   ```
   
-[Click here to see an example](https://github.com/kashifo/android-folder-picker-library/blob/master/app/src/main/java/lib/folderpicker/demo/MainActivity.java)
-
 
 ## License
 
